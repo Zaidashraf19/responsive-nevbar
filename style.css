@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    background-color: black;
+    color: white;
+}
+p {
+    font-size: 2rem;
+}
+.container {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.logo {
+    width: 165px;
+}
+.navbar {
+    display: flex;
+    gap: 35px;
+    font-size: 2rem;
+}
+button {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    border-radius: 8rem;
+    padding: 1.5rem;
+    margin-top: -2rem;
+}
+.orderonline {
+    background-color: red;
+}
+.icon {
+    display: none;
+    font-size: 3rem;
+}
+@media (max-width: 753px) {
+    .navbar {
+        display: none;
+    }
+    .icon {
+        display: block;
+    }
+    .container{
+        justify-content: space-between;
+        padding: 10px 30px;
+    }
+}
